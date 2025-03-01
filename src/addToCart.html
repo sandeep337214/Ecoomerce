@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/src/addtocart.css">
+</head>
+<body>
+    <header class="section-navbar">
+        <section class="top_txt">
+          <div class="head-container">
+            <div class="head_txt">
+              <p>Free shipping, 30-day return or refund guarantee.</p>
+            </div>
+            <div class="sing_in_up">
+              <a href="/src/signin.html">SIGN IN</a>
+              <a href="/src/sigup.html">SIGN UP</a>
+            </div>
+          </div>
+        </section>
+        <div class="container height">
+          <div class="navbar_brand">
+            <a href="index.html">
+              <img
+                src="/public/log.png"
+                alt="thapa eCommerce logo"
+                class="logo"
+                width="100px"
+                height="auto"
+              />
+            </a>
+          </div>
+          <nav class="navbar">
+            <ul>
+              <li class="nav-item">
+                <a href="/" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="/" class="nav-link">about</a>
+              </li>
+              <li class="nav-item">
+                <a href="/" class="nav-link">Product</a>
+              </li>
+              <li class="nav-item">
+                <a href="/" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="/src/addToCart.html" 
+                class="nav-link add-to-cart-button"
+                id="cartValue">
+                  <i class="fa-solid fa-cart-shopping" >
+                    0
+                  </i>
+                </a>
+              </li>
+            </ul> 
+          </nav>
+        </div>
+      </header>
+    <section class="addToCartElement">
+        <div class="containers">
+            <section>
+                <div id="productCartContainer"></div>
+            </section>
+            <section class="productCartTotalElem">
+                <div class="productCartTotalElement">
+                    <p>Selected Offer Summary</p>
+                    <div class="productOrderTotal">
+                        <div class="parent">
+                            <p>Sub Total:</p>
+                            <p class="productSubTotal">0</p>
+                        </div>
+                        <div class="parent">
+                            <p>Taxi:</p>
+                            <p class="productTax">₹50</p>
+                        </div>
+                        <hr/>
+                        <div class="parent">
+                            <p>Final Total:</p>
+                            <p class="productFinalTotal">0</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <template id="productCartTemplate">
+        <div class="cards" id="cardValue">
+            <article class="information[card]">
+                <div>
+                    <span class="category"></span>
+                </div>
+                <img class="productImage" alt="" src=""/>
+                <h2 class="productName"></h2>
+                <p class="productPrice"></p>
+                <div class="stockElement">
+                    <button class="cartIncrement">+</button>
+                    <p class="productQuantity" data-quantity="1">1</p>
+                    <button class="cartDecrement">-</button>
+                </div>
+                <button class="add-to-cart-button remove-to-cart-button">
+                    Remove
+                </button>
+            </article>
+        </div>
+
+    </template>
+      <footer class="section-footer">
+        <div class="footer-container">
+          <div class="content_1">
+            <img src="/public/logo.png" alt="logo" class="img3" />
+            <p class="p5">
+              Welcome to Thapa EcomStore, Your Ultimate Destination for the
+              Cutting Edge Gadgets!
+            </p>
+          </div>
+        </div>
+        <div class="participation">
+          <p class="p2">SHOPPING</p>
+          <li>Computer</li>
+          <li>Laptop Store</li>
+          <li>Accesories</li>
+          <li>Sales & Discount</li>
+        </div>
+        <div class="participation">
+          <p class="p2">EXPERIENCE</p>
+          <li>Contact Us</li>
+          <li>Payment Method</li>
+          <li>Delivary</li>
+          <li>Return & Exchange</li>
+        </div>
+        <div class="participation">
+          <p class="p2">NEWSLETTER</p>
+          <p></p>
+          <p class="pp1">Be the first to arrival and sales & force</p>
+          <input
+            type="text"
+            placeholder="Your Gmail FeedBack"
+            class="inputfield"
+          />
+        </div>
+      </footer>
+      <script type="module" src="showAddToCartCards.js"></script>
+</body>
+</html>

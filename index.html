@@ -22,8 +22,8 @@
             <p>Free shipping, 30-day return or refund guarantee.</p>
           </div>
           <div class="sing_in_up">
-            <a href="#">SIGN IN</a>
-            <a href="#">SIGN UP</a>
+            <a href="/src/signin.html">SIGN IN</a>
+            <a href="/src/sigup.html">SIGN UP</a>
           </div>
         </div>
       </section>
@@ -45,22 +45,24 @@
               <a href="/" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="/" class="nav-link">about</a>
+              <a href="/src/about.html" class="nav-link">about</a>
             </li>
             <li class="nav-item">
               <a href="/" class="nav-link">Product</a>
             </li>
             <li class="nav-item">
-              <a href="/" class="nav-link">Contact</a>
+              <a href="/src/contact.html" class="nav-link">Contact</a>
             </li>
             <li class="nav-item">
-              <a href="/addToCart.html" class="nav-link add-to-cart-button">
-                <i class="fa-solid fa-cart-shopping">
-                  <span class="span">2</span>
+              <a href="/src/addToCart.html" 
+              class="nav-link add-to-cart-button"
+              id="cartValue">
+                <i class="fa-solid fa-cart-shopping" >
+                  0
                 </i>
               </a>
             </li>
-          </ul>
+          </ul> 
         </nav>
       </div>
     </header>
@@ -197,6 +199,9 @@
         <div id="productContainer"></div>
       </section>
     </section>
+
+
+    
     <template id="productTemplate">
       <div class="cards" id="cardValue">
         <article class="information">
@@ -391,7 +396,7 @@
         />
       </div>
     </footer>
-    <script type="module" src="./src/main.js"></script>
+    <script type="module" src="/src/main.js"></script>
 
   
     

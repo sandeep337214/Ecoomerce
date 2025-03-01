@@ -518,8 +518,12 @@ li{
     position: relative;
     display: flex;
     gap: 20px;
-    
     margin-bottom: 20px;
     margin-top: 30px;
   }
+  span{
+    position: relative;
+    left: 25px;
+  }
+  
   

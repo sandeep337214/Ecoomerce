@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="addtocart.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Navbar */
+        ul.sanserif {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            background: #007bff;
+            list-style: none;
+            gap: 20px;
+        }
+
+        ul.sanserif .nav-link {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        ul.sanserif .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 60px;
+            text-align: center;
+            background: linear-gradient(to top right, rgb(0, 102, 255), rgb(210, 231, 243));
+            color: white;
+            font-size: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 28px;
+            color: #333;
+        }
+
+        /* Team Section */
+        .row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .column {
+            flex: 1;
+            min-width: 280px;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            width: 300px;
+            height: 380px; /* Fixed height for consistency */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .card img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: -70px;
+            border: 5px solid white;
+            background-color: white;
+        }
+
+        .containers {
+            padding: 20px;
+            margin-top: -40px;
+        }
+
+        .title {
+            color: grey;
+            font-size: 16px;
+        }
+
+        .button {
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            color: white;
+            background-color: #007bff;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            .row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .column {
+                width: 90%;
+            }
+
+            ul.sanserif {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="sanserif">
+        <li><a href="/" class="nav-link">Home</a></li>
+        <li><a href="/src/about.html" class="nav-link">About</a></li>
+        <li><a href="/" class="nav-link">Product</a></li>
+        <li><a href="/src/contact.html" class="nav-link">Contact</a></li>
+        <li>
+            <a href="/src/addToCart.html" class="nav-link add-to-cart-button" id="cartValue">
+                <i class="fa-solid fa-cart-shopping" style="color: white;"> 0</i>
+            </a>
+        </li>
+    </ul> 
+
+    <div class="about-section">
+        <h1>About Us Page</h1>
+        <p>Some text about who we are and what we do.</p>
+        <p>Resize the browser window to see that this page is responsive.</p>
+    </div>
+
+    <h2>Our Team</h2>
+
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="/src/Screenshot 2025-01-31 201132.png" alt="Sandeep">
+                <div class="containers">
+                    <h2>SANDEEP</h2>
+                    <p class="title">CEO & Founder</p>
+                    <p><button class="button">Contact</button></p>
+                    <p>Hi everyone, welcome to the website of the new generation.</p>
+                    <p>sandeep337214@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="/src/WhatsApp Image 2025-01-31 at 8.16.21 PM.jpeg" alt="Bala">
+                <div class="containers">
+                    <h2>BALA SHANMUKH</h2>
+                    <p class="title">Art Director</p>
+                    <p><button class="button">Contact</button></p>
+                    <p>Hi everyone, welcome to the website of the new generation.</p>
+                    <p>sandeep337214@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="/src/17 (1).jpg" alt="Sujith">
+                <div class="containers">
+                    <h2>SUJITH</h2>
+                    <p class="title">Designer</p>
+                    <p><button class="button">Contact</button></p>
+                    <p>Hi everyone, welcome to the website of the new generation.</p>
+                    <p>sandeep337214@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
